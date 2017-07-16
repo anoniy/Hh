@@ -3,6 +3,7 @@ package com.kota.hh.injection.component;
 import com.kota.hh.injection.PerActivity;
 import com.kota.hh.injection.module.ActivityModule;
 import com.kota.hh.ui.main.MainActivity;
+import com.kota.hh.ui.main.auth.AuthActivity;
 
 import dagger.Subcomponent;
 
@@ -10,6 +11,6 @@ import dagger.Subcomponent;
 @Subcomponent(modules = ActivityModule.class)
 public interface ActivityComponent {
 
-    void inject(MainActivity mainActivity);
+    void inject(AuthActivity authActivity);
 
 }

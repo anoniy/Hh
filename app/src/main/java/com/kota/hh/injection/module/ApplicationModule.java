@@ -3,7 +3,7 @@ package com.kota.hh.injection.module;
 import android.app.Application;
 import android.content.Context;
 
-import com.kota.hh.data.remote.TestService;
+import com.kota.hh.data.remote.ApiService;
 import com.kota.hh.injection.ApplicationContext;
 
 import javax.inject.Singleton;
@@ -14,6 +14,7 @@ import dagger.Provides;
 /**
  * Provide application-level dependencies.
  */
+
 @Module
 public class ApplicationModule {
     protected final Application mApplication;
@@ -35,8 +36,8 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    TestService provideRibotsService() {
-        return TestService.Creator.newRibotsService();
+    ApiService provideApiService() {
+        return ApiService.Companion.newApiService();
     }
 
 }

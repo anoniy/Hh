@@ -1,6 +1,7 @@
 package com.kota.hh.util
 
 import rx.Subscription
+import rx.subscriptions.CompositeSubscription
 
 class RxUtil {
 

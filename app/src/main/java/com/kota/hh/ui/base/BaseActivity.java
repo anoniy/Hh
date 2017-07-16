@@ -1,7 +1,12 @@
 package com.kota.hh.ui.base;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 
 import com.kota.hh.App;
 import com.kota.hh.injection.component.ActivityComponent;
@@ -54,6 +59,11 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     protected void onDestroy() {
         if (!isChangingConfigurations()) {
             sComponentsMap.remove(mActivityId);
@@ -63,6 +73,14 @@ public class BaseActivity extends AppCompatActivity {
 
     public ActivityComponent activityComponent() {
         return mActivityComponent;
+    }
+
+    public void hideKeyboard() {
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
 }

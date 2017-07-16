@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">H&amp;H</string>
+    <string name="authorization">Авторизация</string>
+    <string name="create">создать</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="enter">войти</string>\
+
+    <string name="wrong_email">Неправильный Email</string>
+    <string name="wrong_password_length">Пароль должен быть длиннее 5ти символов</string>
+    <string name="wrong_password_contains">Пароль должен содержать минимум 1 строчную букву, 1 заглавную, и 1 цифру</string>
+    <string name="error_when_data_load">Во время загрузки данных произошла ошибка</string>
+    <string name="temperature_template">temp - %s</string>
 </resources>
