@@ -28,7 +28,7 @@ class AuthActivity : BaseActivity(), AuthMvpView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityComponent().inject(this)
+        activityComponent()!!.inject(this)
         authPresenter.attachView(this)
         setContentView(R.layout.activity_auth)
         initToolbar()

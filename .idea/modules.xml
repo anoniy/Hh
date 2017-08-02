@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/H&amp;H.iml" filepath="$PROJECT_DIR$/H&amp;H.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hh.iml" filepath="$PROJECT_DIR$/Hh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MVP-with-Dagger-2-and-Kotlin.iml" filepath="$PROJECT_DIR$/MVP-with-Dagger-2-and-Kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
